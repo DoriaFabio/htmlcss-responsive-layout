@@ -5,14 +5,122 @@
     box-sizing: border-box;
 }
 
-.debug {
-    border: 1px solid green;
+:root {
+    --color-white: #ffffff;
+    --color-bg-color: #d9d9d9;
+    --color-primary: #7c69a4;
+    --color-dark-text: #4e3969;
+    --color-black: #282529;
+    --color-contrast: #fa961a;
+    --color-icon-red: #ea5556;
+    --color-icon-fb: #2871f0;
+    --color-icon-twitter: #009EFF;
+    --color-icon-insta: #DE49A1;
 }
 
 /* Font */
-.font-nerko {
+header {
     font-family: "Nerko One", cursive;
+    color: var(--color-contrast);
+    text-shadow: 1px 1px #282529;
 }
+
 body {
     font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+}
+
+/* Main */
+main {
+    background-color: var(--color-bg-color);
+    padding: 15px;
+    line-height: 1.5;
+}
+
+/* ancora */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Lista */
+ul {
+    list-style: none;
+}
+/* TESTO MAIUSCOLO */
+.txt-uppercase {
+    text-transform: uppercase;
+}
+
+/* Impostazioni flex */
+.d-flex {
+    display: flex;
+}
+
+.j-content1 {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.j-content2 {
+    justify-content: space-between;
+}
+
+/* Colori */
+.bkg-primary {
+    background-color: var(--color-primary);
+}
+
+.text-purple {
+    color: var(--color-dark-text);
+}
+
+.bkg-white {
+    background-color: var(--color-white);
+}
+
+/* Sezione Foto video YT */
+#video img {
+    width: 100%;
+}
+
+#video h4 {
+    padding: 17px;
+}
+
+#video ul {
+    padding-left: 17px;
+    padding-bottom: 20px;
+}
+
+ul span {
+    font-weight: bold;
+}
+
+#video p {
+    font-size: 0.7em;
+}
+/* Sezione Social */
+#social a {
+    padding: 10px;
+    border-radius: 40%;
+    background-color: var(--color-white);
+}
+#social {
+    padding: 15px 0;
+}
+/* Icone */
+.f-icon {
+    color: var(--color-icon-fb);
+}
+.t-icon {
+    color: var(--color-icon-twitter);
+}
+
+.i-icon {
+    color: var(--color-icon-insta);
+}
+.red-icon {
+    color: var(--color-icon-red);
 }
