@@ -207,8 +207,11 @@ footer a {
     #video ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 15px;
+    }
+    #video ul li {
+        width: calc((100% - 30px) / 3);
     }
 
     #social a {
