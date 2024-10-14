@@ -41,10 +41,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 /* Lista */
 ul {
     list-style: none;
 }
+
 /* TESTO MAIUSCOLO */
 .txt-uppercase {
     text-transform: uppercase;
@@ -66,17 +68,19 @@ ul {
 .j-spaceb {
     justify-content: space-between;
 }
-.j-spacea {
-    justify-content: space-around;
-}
 
 .wrap {
     flex-wrap: wrap;
 }
 
 .gap1 {
-    gap: 5px;
+    gap: 15px;
 }
+
+.d-none {
+    display: none;
+}
+
 /* Colori */
 .bkg-primary {
     background-color: var(--color-primary);
@@ -89,9 +93,11 @@ ul {
 .bkg-white {
     background-color: var(--color-white);
 }
+
 .text-white {
     color: var(--color-white);
 }
+
 /* Sezione Foto video YT */
 #video img {
     width: 100%;
@@ -104,6 +110,7 @@ ul {
 #video ul {
     padding-left: 17px;
     padding-bottom: 20px;
+    padding-right: 17px;
 }
 
 .bold {
@@ -113,19 +120,23 @@ ul {
 #video p {
     font-size: 0.7em;
 }
+
 /* Sezione Social */
 #social a {
     padding: 10px;
     border-radius: 40%;
     background-color: var(--color-white);
 }
+
 #social {
     padding: 15px 0;
 }
+
 /* Icone */
 .f-icon {
     color: var(--color-icon-fb);
 }
+
 .t-icon {
     color: var(--color-icon-twitter);
 }
@@ -133,33 +144,106 @@ ul {
 .i-icon {
     color: var(--color-icon-insta);
 }
+
 .red-icon {
     color: var(--color-icon-red);
 }
-/* Sezione pubblicità */    
-#pubblicità {
-    display: none;
+
+/* Pubblicità */
+#pubblicità img {
+    width: 100%;
+    margin: 12px 0;
 }
 
+/* Presentation */
 hr {
     width: 15%;
     border: 1px solid var(--color-contrast);
 }
+
 #presentation .image img {
     width: 50%;
-    float: left;
-    margin-top: 10px;
+    margin-top: 5px;
 }
+
 /* Footer */
 footer {
     text-align: center;
     padding: 10px 10px;
 }
+
 footer p {
     padding: 10px 0;
 }
 
-@media screen and (min-width:  )
+footer a {
+    text-decoration: underline;
+}
+
+/* 
+  MEDIA QUERY
+*/
+
+/* Media Query 576px */
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 25px;
+    }
+
+    .j-start {
+        justify-content: flex-start;
+    }
+
+    header h1 {
+        padding: 0 15px;
+    }
+
+    #video h2 span {
+        display: inline-block;
+    }
+
+    #video ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    #social a {
+        padding: 10px 55px;
+        border-radius: 20px;
+        background-color: var(--color-white);
+    }
+
+    #pubblicità {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .presentation .image img {
+        float: left;
+        margin: 0 10px 0 0;
+    }
+    .presentation .image {
+        display: block;
+    }
+    
+    .presentation .clearfix {
+        margin-top: 10px;
+    }
+
+    .presentation .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+}
+
+@media screen and (min-width: 992px) {}
+
 /* #presentation .clearfix {
     margin-top: 40px;
 }

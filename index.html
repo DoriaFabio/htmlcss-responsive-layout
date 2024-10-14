@@ -16,16 +16,16 @@
 
 <body>
     <!-- Header -->
-    <header class="j-center d-flex">
+    <header class="j-center d-flex j-start">
         <a href="#">
             <h1>Giallo Booleano</h1>
         </a>
     </header>
     <!-- Main -->
-    <main class="container">
-        <section id="video">
+    <main>
+        <section id="video" class="container">
             <p class="text-purple txt-uppercase">Dolci e dessert</p>
-            <h2 class="text-purple">Tiramisù</h2>
+            <h2 class="text-purple">Tiramisù <span class="d-none">(Dolce tradizionale)</span></h2>
             <div class="bkg-white">
                 <a href="https://www.youtube.com/watch?v=JVT900H6s0g">
                     <img src="./img/image(10).png" alt="Video tutorial tiramisù" class="video"></a>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </section>
-        <aside id="social">
+        <aside id="social" class="container">
             <ul class="d-flex j-spaceb">
                 <li>
                     <a href="#">
@@ -69,20 +69,29 @@
             </ul>
         </aside>
         <!-- Pubblicità -->
-        <aside id="pubblicità">
+        <aside id="pubblicità" class="d-none container">
             <img src="./img/banner.png" alt="Pubblicità">
         </aside>
         <!-- Sezione preparazione -->
-        <section id="presentation">
-            <div>
+        <section id="presentation" class="container">
+            <div class="presentation">
                 <h2 class="txt-uppercase">Presentation</h2>
                 <hr>
                 <div class="clearfix">
                     <div class="image d-flex j-center">
                         <img src="./img/tiramisu.jpg" alt="Tiramisù">
                     </div>
-                    <p>     
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quam harum quae quibusdam earum modi corrupti officiis error aut minima. Voluptatibus at aspernatur consequatur unde pariatur incidunt, deserunt est explicabo nisi reiciendis fugiat a. <span class="bold">Odit blanditiis</span>, fugit architecto qui quam inventore quasi vel quas fugiat! Quisquam quam suscipit ipsum temporibus non cumque, delectus dignissimos modi itaque. Tempora, <span class="bold">numquam</span> iste! Corrupti nam suscipit ipsa temporibus in, assumenda eius perspiciatis unde repudiandae voluptates vero dolore ad cumque laboriosam iste, cum exercitationem necessitatibus optio quae expedita <span class="bold">ullam voluptas vel</span>. Eos, maiores. Repudiandae ratione quos quibusdam consequuntur eius, veniam nostrum doloribus pariatur autem necessitatibus.
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quam harum quae quibusdam earum
+                        modi corrupti officiis error aut minima. Voluptatibus at aspernatur consequatur unde pariatur
+                        incidunt, deserunt est explicabo nisi reiciendis fugiat a. <span class="bold">Odit
+                            blanditiis</span>, fugit architecto qui quam inventore quasi vel quas fugiat! Quisquam quam
+                        suscipit ipsum temporibus non cumque, delectus dignissimos modi itaque. Tempora, <span
+                            class="bold">numquam</span> iste! Corrupti nam suscipit ipsa temporibus in, assumenda eius
+                        perspiciatis unde repudiandae voluptates vero dolore ad cumque laboriosam iste, cum
+                        exercitationem necessitatibus optio quae expedita <span class="bold">ullam voluptas vel</span>.
+                        Eos, maiores. Repudiandae ratione quos quibusdam consequuntur eius, veniam nostrum doloribus
+                        pariatur autem necessitatibus.
                     </p>
                 </div>
 
@@ -94,7 +103,7 @@
     <footer class="bkg-primary text-white">
         <h4>&copy; 2021 Giallo Booleano S.p.a.</h4>
         <p>Via Tal de tali, 10 - 88046 Lamezia Terme - VAT 43940293020</p>
-        <ul class="d-flex wrap j-spacea gap1">
+        <ul class="d-flex wrap j-center gap1">
             <li><a href="#">About us</a></li>
             <li><a href="#">Terms of use</a></li>
             <li><a href="#">Privacy Policy</a></li>
