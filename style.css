@@ -94,7 +94,7 @@ ul {
     padding-bottom: 20px;
 }
 
-ul span {
+.bold {
     font-weight: bold;
 }
 
@@ -124,3 +124,27 @@ ul span {
 .red-icon {
     color: var(--color-icon-red);
 }
+/* Sezione pubblicità */    
+#pubblicità {
+    display: none;
+}
+
+hr {
+    width: 15%;
+    border: 1px solid var(--color-contrast);
+}
+#presentation .image img {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+/* Footer */
+
+/* #presentation .clearfix {
+    margin-top: 40px;
+}
+#presentation .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
