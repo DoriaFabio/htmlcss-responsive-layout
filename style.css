@@ -55,7 +55,7 @@ ul {
     display: flex;
 }
 
-.j-content1 {
+.j-center {
     justify-content: center;
 }
 
@@ -63,10 +63,20 @@ ul {
     align-items: center;
 }
 
-.j-content2 {
+.j-spaceb {
     justify-content: space-between;
 }
+.j-spacea {
+    justify-content: space-around;
+}
 
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap1 {
+    gap: 5px;
+}
 /* Colori */
 .bkg-primary {
     background-color: var(--color-primary);
@@ -79,7 +89,9 @@ ul {
 .bkg-white {
     background-color: var(--color-white);
 }
-
+.text-white {
+    color: var(--color-white);
+}
 /* Sezione Foto video YT */
 #video img {
     width: 100%;
@@ -139,7 +151,15 @@ hr {
     margin-top: 10px;
 }
 /* Footer */
+footer {
+    text-align: center;
+    padding: 10px 10px;
+}
+footer p {
+    padding: 10px 0;
+}
 
+@media screen and (min-width:  )
 /* #presentation .clearfix {
     margin-top: 40px;
 }
